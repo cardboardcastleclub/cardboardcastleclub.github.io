@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="page-hero">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <p class="page-subtitle">{{ .Params.subtitle }}</p>
+</div>
+<div class="page-content container">
+  {{ .Content }}
+
+  <h2 class="section-title">🎬 Directors & Staff</h2>
+  <div class="crew-grid crew-staff">
+    {{ range .Site.Data.crew.staff }}
+    <div class="crew-card">
+      <div class="crew-avatar">{{ .emoji }}</div>
+      <h3 class="crew-name">{{ .name }}</h3>
+      <span class="crew-role">{{ .role }}</span>
+      <p class="crew-bio">{{ .bio }}</p>
+    </div>
+    {{ end }}
+  </div>
+
+  <h2 class="section-title">⭐ The Cast</h2>
+  <div class="crew-grid crew-cast">
+    {{ range .Site.Data.crew.cast }}
+    <div class="crew-card crew-card-kid">
+      <div class="crew-avatar">{{ .emoji }}</div>
+      <h3 class="crew-name">{{ .name }}</h3>
+      <span class="crew-role">as {{ .character }}</span>
+      <p class="crew-bio">{{ .funfact }}</p>
+    </div>
+    {{ end }}
+  </div>
+
+  <h2 class="section-title">🔧 The Builders</h2>
+  <div class="crew-grid crew-behind">
+    {{ range .Site.Data.crew.builders }}
+    <div class="crew-card crew-card-kid">
+      <div class="crew-avatar">{{ .emoji }}</div>
+      <h3 class="crew-name">{{ .name }}</h3>
+      <span class="crew-role">{{ .role }}</span>
+      <p class="crew-bio">{{ .funfact }}</p>
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="crew-join">
+    <h2>Want to Join the Crew?</h2>
+    <p>We're always looking for new faces — on stage and off! Whether you want to act, build sets, paint backdrops, or run the lights, there's a spot for you in the castle.</p>
+    <a href="mailto:{{ .Site.Params.email }}" class="btn btn-primary">🙋 Join Us</a>
+  </div>
+</div>
+{{ end }}

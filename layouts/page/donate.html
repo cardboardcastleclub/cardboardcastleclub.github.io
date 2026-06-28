@@ -1,0 +1,113 @@
+{{ define "main" }}
+<div class="page-hero donate-hero">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <p class="page-subtitle">{{ .Params.subtitle }}</p>
+</div>
+<div class="page-content container">
+  {{ .Content }}
+
+  <div class="donate-impact">
+    <h2 class="section-title">Where Your Money Goes</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-amount">$25</div>
+        <div class="impact-icon">🎨</div>
+        <h3>Paint & Supplies</h3>
+        <p>Buys paint, tape, markers, and glue for one child to help build and decorate our cardboard sets for an entire show.</p>
+      </div>
+      <div class="impact-card featured">
+        <div class="impact-amount">$50</div>
+        <div class="impact-icon">👗</div>
+        <h3>A Full Costume</h3>
+        <p>Funds a complete costume for one cast member — from thrift-store finds to hand-sewn finishing touches.</p>
+      </div>
+      <div class="impact-card">
+        <div class="impact-amount">$100</div>
+        <div class="impact-icon">💡</div>
+        <h3>Lights & Sound</h3>
+        <p>Helps us rent proper lighting and a sound system so our kids can shine on stage (literally and figuratively).</p>
+      </div>
+      <div class="impact-card">
+        <div class="impact-amount">$250</div>
+        <div class="impact-icon">🏰</div>
+        <h3>Scholarship Spot</h3>
+        <p>Fully sponsors one child's participation for a whole season — including materials, costumes, and snacks.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="donate-form-section">
+    <h2 class="section-title">Make a Donation</h2>
+    <form class="donate-form" onsubmit="handleDonateSubmit(event)">
+      <div class="donation-amounts">
+        <label class="amount-option">
+          <input type="radio" name="amount" value="25">
+          <span class="amount-label">$25</span>
+        </label>
+        <label class="amount-option">
+          <input type="radio" name="amount" value="50" checked>
+          <span class="amount-label">$50</span>
+        </label>
+        <label class="amount-option">
+          <input type="radio" name="amount" value="100">
+          <span class="amount-label">$100</span>
+        </label>
+        <label class="amount-option">
+          <input type="radio" name="amount" value="250">
+          <span class="amount-label">$250</span>
+        </label>
+        <label class="amount-option custom">
+          <input type="radio" name="amount" value="custom">
+          <span class="amount-label">Other</span>
+        </label>
+      </div>
+      <div class="custom-amount-field" id="custom-amount-field" style="display:none">
+        <label for="custom-amount">Custom Amount ($)</label>
+        <input type="number" id="custom-amount" min="1" placeholder="Enter amount">
+      </div>
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="donor-name">Your Name</label>
+          <input type="text" id="donor-name" name="name" required placeholder="Jane Smith">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="donor-email">Email Address</label>
+          <input type="email" id="donor-email" name="email" required placeholder="jane@example.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="donor-message">Leave a Message (optional)</label>
+          <textarea id="donor-message" name="message" rows="3" placeholder="e.g. Build something amazing, kids!"></textarea>
+        </div>
+      </div>
+      <label class="checkbox-label">
+        <input type="checkbox" name="recurring"> Make this a monthly donation 💛
+      </label>
+      <button type="submit" class="btn btn-primary btn-full">🎁 Donate Now</button>
+      <p class="form-disclaimer">This is a demo form. In production, this would connect to a payment processor like Stripe or PayPal.</p>
+    </form>
+  </div>
+
+  <div class="donor-wall">
+    <h2 class="section-title">Our Amazing Supporters</h2>
+    <p class="donor-intro">A huge thank-you to everyone who has helped keep our castle standing!</p>
+    <div class="donor-names">
+      <span class="donor-name star">The Martinez Family ⭐</span>
+      <span class="donor-name star">Grandma Rose ⭐</span>
+      <span class="donor-name">The Chen Family</span>
+      <span class="donor-name">Anonymous Builder</span>
+      <span class="donor-name star">Dave & Linda O'Brien ⭐</span>
+      <span class="donor-name">Mrs. Kowalski's 3rd Grade Class</span>
+      <span class="donor-name">The Patel Family</span>
+      <span class="donor-name star">Theatreville Community Foundation ⭐</span>
+      <span class="donor-name">Uncle Marco</span>
+      <span class="donor-name">The Johnsons</span>
+      <span class="donor-name">A Very Kind Stranger</span>
+      <span class="donor-name star">Bright Futures Arts Grant ⭐</span>
+    </div>
+  </div>
+</div>
+{{ end }}

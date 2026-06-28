@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="footer-curtain"></div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">🏰</span>
+        <p class="footer-tagline">{{ .Site.Params.tagline }}</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>{{ .Site.Params.email }}</p>
+        <p>{{ .Site.Params.phone }}</p>
+        <p>{{ .Site.Params.address }}</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} Cardboard Castle Club. All rights reserved.</p>
+      <p class="footer-hearts">Built with ❤️, cardboard, and a whole lot of imagination</p>
+    </div>
+  </div>
+</footer>

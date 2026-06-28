@@ -1,0 +1,84 @@
+{{ define "main" }}
+<div class="page-hero">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <p class="page-subtitle">{{ .Params.subtitle }}</p>
+</div>
+<div class="page-content container">
+  <div class="about-intro">
+    {{ .Content }}
+  </div>
+
+  <div class="about-values">
+    <h2 class="section-title">What We Believe</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <h3>Every Child Is Creative</h3>
+        <p>We believe that every young person has something extraordinary inside them. Our job is to hand them a paintbrush, a script, and a stage made of boxes.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <h3>Process Over Perfection</h3>
+        <p>The magic isn't just in the final bow — it's in every rehearsal, every wobbly set piece, every "let's try that again." We celebrate the mess.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <h3>Inclusion Is Non-Negotiable</h3>
+        <p>No auditions to "get in." No one sits on the sidelines. Every child who walks through our doors gets a role, a voice, and a place to belong.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">04</div>
+        <h3>DIY Is the Way</h3>
+        <p>We don't need fancy equipment. A refrigerator box becomes a spaceship. A bedsheet becomes a waterfall. Imagination is our biggest budget line.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-history">
+    <h2 class="section-title">Our Story</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2019</div>
+        <div class="timeline-content">
+          <h3>The First Box</h3>
+          <p>Founded by a group of parents who wanted their kids to have a creative outlet beyond screens. Started with 8 kids, a garage, and a stack of Amazon boxes.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-content">
+          <h3>Going Virtual</h3>
+          <p>When the world shut down, we went online. Kids performed monologues from their bedrooms and built mini sets out of shoeboxes. The show went on.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-content">
+          <h3>Our First Big Show</h3>
+          <p>We staged our first full-length production — a kid-written original called "The Kingdom of Nowhere." The entire set was built from recycled cardboard. Standing ovation.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">
+          <h3>Building the Castle</h3>
+          <p>Now over 40 active members, multiple productions a year, and a permanent rehearsal space (with a truly impressive cardboard castle in the corner).</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Now</div>
+        <div class="timeline-content">
+          <h3>The Next Chapter</h3>
+          <p>We're bigger than ever and working on our most ambitious build yet. Come be part of the story.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-cta">
+    <h2>Ready to Build With Us?</h2>
+    <p>New members are always welcome. No experience needed — just bring your imagination (and maybe an empty box)!</p>
+    <a href="mailto:{{ .Site.Params.email }}" class="btn btn-primary">📧 Contact Us</a>
+  </div>
+</div>
+{{ end }}

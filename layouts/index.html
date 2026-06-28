@@ -1,0 +1,87 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-shapes">
+    <div class="shape shape-1">✂️</div>
+    <div class="shape shape-2">🎨</div>
+    <div class="shape shape-3">⭐</div>
+    <div class="shape shape-4">📦</div>
+    <div class="shape shape-5">🖌️</div>
+    <div class="shape shape-6">✨</div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">📦 Now Welcoming New Builders!</div>
+    <h1 class="hero-title">
+      <span class="title-line-1">Cardboard</span>
+      <span class="title-line-2">Castle</span>
+      <span class="title-line-3">Club</span>
+    </h1>
+    <p class="hero-subtitle">{{ .Site.Params.tagline }}</p>
+    <div class="hero-actions">
+      <a href="{{ "show/" | relURL }}" class="btn btn-primary">🎪 See Our Show</a>
+      <a href="{{ "about/" | relURL }}" class="btn btn-secondary">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-castle">
+    <div class="tower tower-left"></div>
+    <div class="tower tower-right"></div>
+    <div class="castle-wall"></div>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="container">
+    <div class="highlights-grid">
+      <div class="highlight-card" style="--delay: 0">
+        <div class="highlight-icon">🌟</div>
+        <h3>Build Confidence</h3>
+        <p>Every child discovers their voice and learns to share it with the world — one scene, one cardboard prop at a time.</p>
+      </div>
+      <div class="highlight-card" style="--delay: 1">
+        <div class="highlight-icon">🎨</div>
+        <h3>Creative Expression</h3>
+        <p>From acting to building sets out of boxes and tape — there's a creative role for every kind of imagination.</p>
+      </div>
+      <div class="highlight-card" style="--delay: 2">
+        <div class="highlight-icon">🤝</div>
+        <h3>Teamwork</h3>
+        <p>Building a castle takes a crew. Kids learn collaboration, empathy, and the magic of making something together.</p>
+      </div>
+      <div class="highlight-card" style="--delay: 3">
+        <div class="highlight-icon">🎉</div>
+        <h3>Pure Fun</h3>
+        <p>At the end of the day, it's about joy. Laughing, playing pretend, and making unforgettable memories on our cardboard stage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Our Next Show Is Coming Up!</h2>
+      <p>We've been building, painting, rehearsing — and we'd love for you to come see what we've made.</p>
+      <a href="{{ "show/" | relURL }}" class="btn btn-primary">🎟️ Get Tickets</a>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Parents Say</h2>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial">
+        <p>"My daughter went from being too shy to order her own food to performing a monologue in front of 200 people. This club changed her life."</p>
+        <cite>— Sarah M., parent</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"The directors genuinely care about every single child. It's not about having the 'best' actors — it's about helping every kid grow."</p>
+        <cite>— James T., parent</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"My son comes home covered in paint and glitter every week and I've never seen him happier. He's found his people."</p>
+        <cite>— Priya K., parent</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,110 @@
+{
+  "staff": [
+    {
+      "name": "Maria Santos",
+      "role": "Artistic Director & Founder",
+      "emoji": "🎬",
+      "bio": "Former Broadway stage manager turned community theatre evangelist. Maria founded the club in 2019 with nothing but eight kids and a pile of moving boxes."
+    },
+    {
+      "name": "Devon Park",
+      "role": "Music Director",
+      "emoji": "🎵",
+      "bio": "Classically trained pianist who believes every kid can carry a tune — they just need someone to believe in them first."
+    },
+    {
+      "name": "Aisha Thompson",
+      "role": "Choreographer",
+      "emoji": "💃",
+      "bio": "Dance teacher by day, choreographer by weekend. Her motto: 'If you can walk, you can dance. If you can talk, you can sing.'"
+    },
+    {
+      "name": "Bill Kowalski",
+      "role": "Master Builder",
+      "emoji": "🔨",
+      "bio": "Retired carpenter who builds our cardboard sets with the kids. His philosophy: 'A wobbly castle built by a proud kid beats a perfect one every time.'"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Zara M.",
+      "character": "Kit",
+      "emoji": "🌟",
+      "funfact": "Age 12 · This is her 5th show with the club. She once performed an entire scene with her costume on backwards and nobody noticed."
+    },
+    {
+      "name": "Leo R.",
+      "character": "Sir Tinfoil",
+      "emoji": "🛡️",
+      "funfact": "Age 10 · Joined because his sister did. Now he's the one who can't stop singing show tunes in the car."
+    },
+    {
+      "name": "Mika T.",
+      "character": "Queen Cardboard",
+      "emoji": "👑",
+      "funfact": "Age 14 · The club's resident philosopher. Writes most of her own dialogue and is usually right that her version is better."
+    },
+    {
+      "name": "Jayden K.",
+      "character": "Bubble Wrap Dragon",
+      "emoji": "🐉",
+      "funfact": "Age 9 · Cannot physically stand still for more than 4 seconds, which is why this role was literally written for him."
+    },
+    {
+      "name": "Sofia L.",
+      "character": "The Tape Fairy",
+      "emoji": "✨",
+      "funfact": "Age 11 · Started as a set painter last year. This is her first time on stage and she's already stealing scenes."
+    },
+    {
+      "name": "Owen B.",
+      "character": "The Box King",
+      "emoji": "📦",
+      "funfact": "Age 13 · The tallest kid in the club. His booming voice can be heard from the parking lot. Literally."
+    },
+    {
+      "name": "Priya S.",
+      "character": "Glitter Mouse",
+      "emoji": "🐭",
+      "funfact": "Age 8 · The youngest cast member. Insisted on doing all her own stunts, which mostly involve crawling through boxes."
+    },
+    {
+      "name": "Ethan W.",
+      "character": "Captain Scissors",
+      "emoji": "✂️",
+      "funfact": "Age 12 · Also plays trumpet in the pit band. Has been known to sprint from stage to orchestra pit mid-scene."
+    }
+  ],
+  "builders": [
+    {
+      "name": "Noor A.",
+      "role": "Stage Manager",
+      "emoji": "📋",
+      "funfact": "Age 14 · Keeps everyone on schedule with color-coded binders that would make a NASA engineer jealous."
+    },
+    {
+      "name": "Marcus D.",
+      "role": "Lighting Operator",
+      "emoji": "💡",
+      "funfact": "Age 13 · Taught himself lighting design from YouTube tutorials. His blackout timing is impeccable."
+    },
+    {
+      "name": "Lily C.",
+      "role": "Costume Designer",
+      "emoji": "✂️",
+      "funfact": "Age 15 · Sews, hot-glues, and bedazzles every costume. Her Queen Cardboard crown is a genuine masterpiece."
+    },
+    {
+      "name": "Sam & Jordan",
+      "role": "Set Construction Crew",
+      "emoji": "📦",
+      "funfact": "Ages 10 & 11 · Siblings who argue about everything except how to turn a refrigerator box into a castle tower."
+    },
+    {
+      "name": "Ava F.",
+      "role": "Sound Effects",
+      "emoji": "🔊",
+      "funfact": "Age 12 · Creates all our sound effects from scratch. The 'crumbling castle' track has over 40 layers. She's 12."
+    }
+  ]
+}

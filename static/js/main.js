@@ -11,7 +11,7 @@
     if (!adultInput || !childInput || !totalEl) return;
     const adults = parseInt(adultInput.value) || 0;
     const children = parseInt(childInput.value) || 0;
-    totalEl.textContent = 'Total: $' + (adults * 8 + children * 5);
+    totalEl.textContent = 'Total: £' + (adults * 8 + children * 5);
   }
   if (adultInput) adultInput.addEventListener('input', updateTotal);
   if (childInput) childInput.addEventListener('input', updateTotal);
@@ -52,7 +52,7 @@ function handleDonateSubmit(e) {
   btn.style.background = '#4CAF50';
   btn.disabled = true;
   setTimeout(function () {
-    alert('Thank you, ' + name + '! Your $' + amount + ' donation helps us keep building. You\'re amazing! \uD83C\uDFF0');
+    alert('Thank you, ' + name + '! Your \u00A3' + amount + ' donation helps us keep building. You\'re amazing! \uD83C\uDFF0');
   }, 300);
 }
 

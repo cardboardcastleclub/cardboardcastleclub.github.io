@@ -338,7 +338,7 @@ strong { font-weight: 600; }
 .impact-card:nth-child(4)::after { background: var(--grad-candy); }
 .impact-card:hover { transform: translateY(-4px); }
 .impact-card.featured { border: 3px solid var(--color-sunshine); box-shadow: var(--shadow-card); }
-.impact-card.featured::after { content: '\2B50 Most Popular'; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--grad-sunset); color: var(--color-white); font-family: var(--font-display); font-size: 0.75rem; font-weight: 600; padding: 4px 16px; border-radius: var(--radius-xl); height: auto; }
+.impact-card.featured::after { content: '\2B50 Most Popular'; position: absolute; top: -14px; bottom: auto; left: 50%; right: auto; transform: translateX(-50%); background: var(--grad-sunset); color: var(--color-white); font-family: var(--font-display); font-size: 0.75rem; font-weight: 600; padding: 4px 16px; border-radius: var(--radius-xl); height: auto; }
 .impact-amount { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; background: var(--grad-warm); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
 .impact-icon { font-size: 2.4rem; margin-bottom: 12px; }
 .impact-card h3 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px; color: var(--color-text); }
